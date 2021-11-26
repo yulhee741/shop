@@ -27,23 +27,6 @@ class ItemRepositoryTest {
     @PersistenceContext
     EntityManager em;
 
-    @Test
-    @DisplayName("Querydsl 조회 테스트1")
-    public void queryDslTest(){
-        this.createItemList();
-        JPAQueryFactory queryFactory = new JPAQueryFactory(em);
-        QItem qItem = QItem.item;
-        JPAQuery<Item> query = queryFactory.selectFrom(qItem)
-                .where(qItem.itemSellStatus.eq(ItemSellStatus.SELL))
-                .where(qItem.itemDetail.like("%" + "테스트 상품 상세 설명" + "%"))
-                .orderBy(qItem.price.desc());
-
-        List<Item> itemList = query.fetch();
-
-        for(Item item : itemList) {
-            System.out.println(item.toString());
-        }
-    }
 
     @Test
     @DisplayName("상품 저장 테스트")
