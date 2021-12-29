@@ -1,9 +1,11 @@
 com/example/shop/entity/Order.class
 com/example/shop/entity/BaseEntity.class
 com/example/shop/repository/OrderItemRepository.class
+com/example/shop/repository/ItemRepositoryCustomImpl.class
 com/example/shop/entity/QCartItem.class
 com/example/shop/entity/QBaseEntity.class
 com/example/shop/repository/OrderRepository.class
+com/example/shop/dto/ItemSearchDto.class
 com/example/shop/service/ItemImgService.class
 com/example/shop/repository/ItemRepository.class
 com/example/shop/controller/MainController.class
@@ -19,6 +21,7 @@ com/example/shop/entity/QItem.class
 com/example/shop/controller/MemberController.class
 com/example/shop/dto/MemberFormDto.class
 com/example/shop/entity/ItemImg.class
+com/example/shop/repository/ItemRepositoryCustom.class
 com/example/shop/entity/Item.class
 com/example/shop/constant/OrderStatus.class
 com/example/shop/repository/ItemImgRepository.class
